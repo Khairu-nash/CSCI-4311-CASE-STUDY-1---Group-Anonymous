@@ -1,0 +1,109 @@
+/* Code for the calendar of May 2024*/
+#calendar {
+  max-width: 500px;
+  margin: 0;
+  margin-left: 50px; /* Add this line to move the calendar to the left side */
+}
+.month {
+  padding: 40px 25px;
+  background: #1abc9c;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+  font-size: 20px;
+}
+
+#days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #777;
+}
+
+#days li:hover {
+  background-color: #1abc9c;
+  width: 13.6%;
+  color: white !important;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width: 720px) {
+  .weekdays li,
+  #days li {
+    width: 13.1%;
+    padding: 5px;
+    margin: 10px auto; /* Add this line to center the elements horizontally */
+  }
+  #calendar {
+    margin-left: 0; /* Add this line to center the calendar horizontally */
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li,
+  #days li {
+    width: 12.5%;
+  }
+  .days li .active {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li,
+  #days li {
+    width: 12.2%;
+  }
+}
+/* Code for the calendar of June 2024*/
+
+/* Code for the calendar of July 2024*/

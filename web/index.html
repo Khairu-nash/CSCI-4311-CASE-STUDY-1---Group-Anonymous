@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="calendar.css" />
+    <link rel="stylesheet" href="availability.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .selected {
+        background-color: #1abc9c;
+        color: white !important; /* Change to desired color */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="other.html"></a>
+          <img src="images/back_icon.png" alt="Your Image" />
+        </a>
+      </div>
+      <div id="webName">EVENTHORY</div>
+      <nav>
+        <div id="webName">EVENTHORY</div>
+        <div>Banquet Hall</div>
+        <div>Court</div>
+        <div>Theatre</div>
+      </nav>
+    </header>
+    <div id="calendar">
+      <div class="month">
+        <ul>
+          <div class="prev">&#10094;</div>
+          <div class="next">&#10095;</div>
+          <div id="selected_month">
+            MAY<br />
+            <span style="font-size: 25px">2024</span>
+          </div>
+        </ul>
+      </div>
+
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+
+      <ul id="days">
+        <li></li>
+        <li></li>
+        <li onclick="myDate(this)"><span class="active">1</span></li>
+        <li onclick="myDate(this)">2</li>
+        <li onclick="myDate(this)">3</li>
+        <li onclick="myDate(this)">4</li>
+        <li onclick="myDate(this)">5</li>
+        <li onclick="myDate(this)">6</li>
+        <li onclick="myDate(this)">7</li>
+        <li onclick="myDate(this)">8</li>
+        <li onclick="myDate(this)">9</li>
+        <li onclick="myDate(this)">10</li>
+        <li onclick="myDate(this)">11</li>
+        <li onclick="myDate(this)">12</li>
+        <li onclick="myDate(this)">13</li>
+        <li onclick="myDate(this)">14</li>
+        <li onclick="myDate(this)">15</li>
+        <li onclick="myDate(this)">16</li>
+        <li onclick="myDate(this)">17</li>
+        <li onclick="myDate(this)">18</li>
+        <li onclick="myDate(this)">19</li>
+        <li onclick="myDate(this)">20</li>
+        <li onclick="myDate(this)">21</li>
+        <li onclick="myDate(this)">22</li>
+        <li onclick="myDate(this)">23</li>
+        <li onclick="myDate(this)">24</li>
+        <li onclick="myDate(this)">25</li>
+        <li onclick="myDate(this)">26</li>
+        <li onclick="myDate(this)">27</li>
+        <li onclick="myDate(this)">28</li>
+        <li onclick="myDate(this)">29</li>
+        <li onclick="myDate(this)">30</li>
+        <li onclick="myDate(this)">31</li>
+      </ul>
+    </div>
+    <div id="availability">
+      <div id="chosen_date"></div>
+
+      <ul id="time_container">
+        <ul>
+          <span class="unavailable">08:00-08:30</span>
+        </ul>
+        <ul>
+          <span class="unavailable">08:30-09:00</span>
+        </ul>
+        <ul>
+          <span class="unavailable">09:00-09:30</span>
+        </ul>
+        <ul>
+          <span class="unavailable">09:30-10:00</span>
+        </ul>
+        <ul>
+          <span class="buffer">10:00-10:30</span>
+        </ul>
+        <ul>
+          <span class="available">10:30-11:00</span>
+        </ul>
+        <ul>
+          <span class="available">11:00-11.30</span>
+        </ul>
+        <ul>
+          <span class="available">11:30-12:00</span>
+        </ul>
+        <ul>
+          <span class="available">12:00-12.30</span>
+        </ul>
+        <ul>
+          <span class="available">12:30-13:00</span>
+        </ul>
+        <ul>
+          <span class="available">13:00-13.30</span>
+        </ul>
+        <ul>
+          <span class="available">13:30-14:00</span>
+        </ul>
+        <ul>
+          <span class="available">14:00-14:30</span>
+        </ul>
+        <ul>
+          <span class="available">14:30-15:00</span>
+        </ul>
+        <ul>
+          <span class="available">15:00-15:30</span>
+        </ul>
+        <ul>
+          <span class="available">15:30-16:00</span>
+        </ul>
+        <ul>
+          <span class="available">16:00-16:30</span>
+        </ul>
+        <ul>
+          <span class="available">16:30-17:00</span>
+        </ul>
+      </ul>
+      <button onclick="window.location.href='book.html'">Book</button>
+    </div>
+    <div class="eventImg">
+      <img
+        src="images/banquet_hall.jpg"
+        alt="Image description"
+        style="border: 5px solid #1abc9c; height: 100%; width: 100%"
+      />
+      <aside>
+        <h1>Banquet Hall</h1>
+        <p>
+          The Banquet Hall is a large room or hall that is used for formal
+          gatherings, such as weddings, parties, or banquets. The hall is
+          generally equipped with a stage and audio-visual equipment.
+        </p>
+      </aside>
+    </div>
+    <script src="calScript.js"></script>
+  </body>
+</html>

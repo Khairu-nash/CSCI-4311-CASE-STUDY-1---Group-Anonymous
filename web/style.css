@@ -1,0 +1,99 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(39, 35, 35);
+  color: aliceblue;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+}
+nav div:hover {
+  background-color: aliceblue;
+  color: rgb(39, 35, 35);
+}
+
+header nav div {
+  margin: 0 120px;
+}
+#webName {
+  font-size: 30px;
+  font-weight: bold;
+  color: aliceblue;
+  position: absolute;
+  right: 80%;
+}
+body {
+  background-color: rgb(68, 65, 65);
+  padding: 0;
+  margin: 0;
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 1.5%;
+  right: 1.5%;
+  z-index: 1;
+  filter: invert(95%);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px;
+  }
+
+  header div {
+    margin: 0;
+  }
+
+  header img {
+    position: static;
+    margin-bottom: 10px;
+  }
+}
+
+.eventImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 35%;
+  position: absolute;
+  top: 12%;
+  right: 20%;
+}
+.eventImg aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  background-color: rgb(39, 35, 35);
+  color: aliceblue;
+  font-size: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(39, 35, 35);
+  color: aliceblue;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
