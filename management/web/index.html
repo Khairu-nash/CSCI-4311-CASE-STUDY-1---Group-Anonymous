@@ -1,0 +1,140 @@
+<!-- Muhammad Khairunas bin Noorizam - 2112383 -->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="scaffolded-by" content="https://github.com/dart-lang/sdk">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="styles_khairunas.css">
+    <script defer src="main.dart.js"></script>
+</head>
+
+<body>
+
+  <div id="header"style="background: linear-gradient(90deg, rgb(166, 166, 166) 0%, rgb(255, 255, 255) 100%);">
+    <a href=""><img src="images\icon.png" alt=""></a>
+    <nav>
+        <ul id="navbar">
+            <li><a href="add_event.html">Add Event</a></li>
+            <li><a href="view_all.html">View All</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hall_info">Hall</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div>
+              <div class="login" style="display: none;">
+                <li><button onclick="document.getElementById('id01').style.display='block'">User Login</button>
+                  <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                  class="close" title="Close Modal">&times;</span>
+                  
+                    <form class="modal-content animate" action="/action_page.php">
+                  
+                      <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="username" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="password" required>
+                  
+                        <button type="submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+                <li><button onclick="document.getElementById('id01').style.display='block'">Admin Login</button>
+                  <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                  class="close" title="Close Modal">&times;</span>
+                  
+                    <form class="modal-content animate" action="/action_page.php">
+                      <div class="container">
+                        <label for="uname"><b>Admin ID</b></label>
+                        <input type="text" placeholder="Enter AdminID" id="adminID" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" id="apswd" required>
+                  
+                        <button type="submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                  
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                </li>
+              </div>
+              <div class="logout" style="display: 1;">
+                <li><button class="btn"><img src="images/logout_24dp.png"></i> LogOut</button></li>
+              </div>
+            </div>
+        </ul>
+    </nav>
+  </div>
+
+  <div class="firstpageinfo">
+    <div class="title">
+        <h1>Experience Unforgettable Events</h1>
+        <h3>Transforming Venues with Inspiration and Ingenuity</h3>
+        <br>
+        <a href="add_event.html"> <button class="main_button">ADD EVENT</button></a>
+        <a href="view_all.html"> <button class="main_button">VIEW ALL</button></a>    
+    </div>
+  </div>
+
+  <div id="about" class="about" style="background: linear-gradient(90deg, #1abc9c 0%, rgb(255, 255, 255));">
+    <div class="row">
+      <div class="column">
+        <img width="546px" height="364px" src="images/album-2.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="column">
+        <h2>All About Our Event Management Services</h2>
+        <p>Welcome to our Event Management System, where we combine seamless event planning with efficient scheduling to provide a user-friendly platform for event organizers and administrators. Our system is designed with a focus on simplicity and functionality, ensuring that every event, whether it's a corporate gathering or a social celebration, is meticulously organized and executed. With our robust technology and a passion for innovation, we strive to revolutionize the way events are managed, offering unparalleled convenience and reliability.</p>
+        <p>By streamlining the event planning process and offering a user-friendly interface, our Event Management System enables event organizers and administrators to focus on creating memorable and successful events. With cohesive communication between all stakeholders involved, conflicts can be minimized, and collaboration can be enhanced. Our system's data-driven insights and analytics empower event organizers to make informed decisions and continuously improve their future event planning strategies. Trust our Event Management System to simplify the complexities of event planning, allowing you to elevate your event experience and create lasting memories for attendees.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="hall_info">
+
+  </div>
+
+  <div class="footer" style="background: linear-gradient(90deg, #1abc9c 0%, rgb(255, 255, 255) 100%);">
+    <div class="container_footer">
+        
+        <h1 class="contact">Contact us</h1>
+        <div>Anonymous Group Inc.P.O. Box 625 * Gombak,</div>
+        <div>OR 012-345-6789 * </div>
+        <div>©2002-2024 Anonymous Group Inc. - Sales & Marketing Division - All Rights Reserved</div>
+        <br>
+        
+        <div id="contact">
+            <div class="navigation_footer">
+                <ul>
+                    <li>GET SOCIAL</li>
+                    <li><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook-f fa"><img src="images/facebook.png" alt="facebook"></i></a></li>
+                    <li><a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter fa"><img src="images/whatsapp.png" alt="whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram fa"><img src="images/instagram.png" alt="instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
