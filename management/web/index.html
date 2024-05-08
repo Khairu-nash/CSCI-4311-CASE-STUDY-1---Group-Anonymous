@@ -24,7 +24,7 @@
             <li><a href="#hall_info">Hall</a></li>
             <li><a href="#contact">Contact</a></li>
             <div>
-              <div class="login" style="display: none;">
+              <div class="login" id="login">
                 <li><button onclick="document.getElementById('id01').style.display='block'">User Login</button>
                   <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'"
@@ -39,7 +39,7 @@
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" id="password" required>
                   
-                        <button type="submit">Login</button>
+                        <button class="change" type="button">Login</button>
                         <label>
                           <input type="checkbox" checked="checked" name="remember"> Remember me
                         </label>
@@ -47,7 +47,6 @@
                   
                       <div class="container" style="background-color:#f1f1f1">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        <span class="psw">Forgot <a href="#">password?</a></span>
                       </div>
                     </form>
                   </div>
@@ -65,7 +64,7 @@
                         <label for="psw"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" id="apswd" required>
                   
-                        <button type="submit">Login</button>
+                        <button class="change" type="button">Login</button>
                         <label>
                           <input type="checkbox" checked="checked" name="remember"> Remember me
                         </label>
@@ -73,14 +72,13 @@
                   
                       <div class="container" style="background-color:#f1f1f1">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                        <span class="psw">Forgot <a href="#">password?</a></span>
                       </div>
                     </form>
                   </div>
                 </li>
               </div>
-              <div class="logout" style="display: 1;">
-                <li><button class="btn"><img src="images/logout_24dp.png"></i> LogOut</button></li>
+              <div class="logout" id="logout" style="display: none;">
+                <li><button class="change" type="button"><img src="images/logout_24dp.png"></i> LogOut</button></li>
               </div>
             </div>
         </ul>
@@ -97,8 +95,8 @@
     </div>
   </div>
 
-  <div id="about" class="about" style="background: linear-gradient(90deg, #1abc9c 0%, rgb(255, 255, 255));">
-    <div class="row">
+  <div class="about" style="background: linear-gradient(90deg, #1abc9c 0%, rgb(255, 255, 255));">
+    <div id="about" class="row">
       <div class="column">
         <img width="546px" height="364px" src="images/album-2.jpg" class="img-fluid rounded-start" alt="...">
       </div>
@@ -111,7 +109,36 @@
   </div>
 
   <div id="hall_info">
+    <div class="image-container">
 
+      <div class="image-item">
+        <img src="images/album-3.jpg" alt="">
+        <p>Lotus Hall<br> <span class="date">Exhibition Hall</span></p>
+        <p class="hidden-description">Welcome to Lotus Hall, a premier exhibition space that combines sophistication and functionality to provide an exceptional venue for a wide array of events. With its spacious layout, modern amenities, and attention to detail, Lotus Hall offers exhibitors a perfect platform to showcase their products and ideas in an engaging and dynamic environment. Named after the symbolic lotus flower, Lotus Hall embodies purity and growth, creating an atmosphere that fosters creativity and innovation among attendees.
+          <br><br>Strategically located and equipped with state-of-the-art facilities, Lotus Hall has become a sought-after destination for a variety of events, including trade shows, exhibitions, product launches, and cultural gatherings. The hall's high ceilings and customizable lighting options set the stage for success, providing a captivating ambiance that leaves a lasting impression. Exhibitors have the freedom to create immersive displays and experiences that effectively communicate their brand and captivate visitors. From interactive exhibits to aesthetically pleasing displays, Lotus Hall offers endless possibilities for exhibitors to create impactful presentations.
+          <br><br>Beyond its physical features, Lotus Hall is committed to providing exceptional service and support to both exhibitors and visitors. The dedicated staff ensures seamless event planning and execution, from coordinating logistics to providing technical assistance. The hall's team understands the importance of creating a memorable event experience and goes above and beyond to meet the unique requirements and expectations of each event.
+        </p>
+      </div>
+
+      <div class="image-item">
+        <img src="images/album-4.jpg" alt="">
+        <p>Roses Hall<br> <span class="date">Banquet Hall</span></p>
+        <p class="hidden-description">Welcome to Roses Hall, an enchanting and luxurious banquet venue crafted to host a wide range of special occasions with elegance and grace. Inspired by the timeless beauty of roses, this hall is meticulously designed to exude romance and sophistication in every aspect. With its spacious layout, refined decor, and exceptional attention to detail, Roses Hall offers the perfect setting for weddings, receptions, galas, and other remarkable celebrations.
+          <br><br>Walking into Roses Hall, guests are immediately captivated by its elegant floral accents, soft lighting, and tasteful furnishings. These elements work together to create a warm and inviting atmosphere that embraces guests with a sense of beauty and refinement. The hall's attention to detail is evident in every corner, from the exquisite table settings to the carefully curated decorations, ensuring that every visual element contributes to the overall ambiance of the event.
+          <br><br>Roses Hall offers more than just a stunning setting—it is also committed to providing impeccable service. The experienced staff pays close attention to every detail, working closely with event organizers to bring their vision to life. From planning to execution, the team at Roses Hall strives to ensure that every aspect of the event is flawlessly executed, allowing guests to fully immerse themselves in the joyous celebration.
+        </p>
+      </div>
+
+      <div class="image-item">
+        <img src="images/album-5.jpg" alt="">
+        <p>Hibicus Hall <br> <span class="date">Conference Hall</span></p>
+        <p class="hidden-description">Welcome to Hibiscus Hall, a sophisticated and functional space designed to elevate your conference experience. Inspired by the vibrant hibiscus flower, known for its beauty and adaptability, Hibiscus Hall offers a professional and inviting ambiance perfect for seminars, conventions, and corporate meetings. With its spacious layout, modern amenities, and an unwavering commitment to excellence, Hibiscus Hall presents organizers with an exceptional venue to create impactful and successful events.
+          <br><br>Hibiscus Hall prides itself on its dedicated team, committed to providing exceptional service and support throughout the event planning process. From the initial inquiry to the day of the conference, the team at Hibiscus Hall works closely with organizers, offering guidance and expertise to ensure a seamless and successful event. Their attention to detail and commitment to excellence ensure that every aspect of the conference, from registration to catering, is handled with precision and care.
+          <br><br>In addition to its impressive features, Hibiscus Hall offers amenities that enhance the conference experience. With its comfortable seating, modern decor, and natural lighting, the hall provides a professional and inspiring environment that fosters creativity and productivity. State-of-the-art technology, including high-quality audiovisual equipment and efficient Wi-Fi connectivity, ensures that participants can fully engage in the conference without any technical difficulties.
+        </p>
+      </div>
+
+    </div>
   </div>
 
   <div class="footer" style="background: linear-gradient(90deg, #1abc9c 0%, rgb(255, 255, 255) 100%);">
