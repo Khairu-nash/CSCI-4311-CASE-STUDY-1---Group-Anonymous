@@ -46,6 +46,9 @@ html, body {
 #navbar li a:hover{
   border-bottom: 3px solid black;
 }
+.hidden {
+  display: none;
+}
 
 /* Login */
 input[type=text], input[type=password] {
@@ -197,6 +200,47 @@ span.psw {
   .column {
     width: 100%;
   }
+}
+
+/*Hall info*/
+#hall_info{
+  padding: 50px;
+  text-align: center;
+  background-color: #000;
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+.image-item {
+  flex: 0 0 calc(33.33% - 20px);
+  border: 3px solid #04AA6D;
+  padding: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fefefe;
+}
+.image-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.image-item p {
+  margin-top: 5px;
+  font-family: 'Arial';
+  font-weight: bold;
+  color: black;
+}
+.image-item .date {
+  font-family: 'Arial';
+  font-weight: lighter;
+  color: black;
 }
 
 /* footer */
