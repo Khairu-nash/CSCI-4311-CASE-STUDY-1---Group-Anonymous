@@ -6,7 +6,9 @@ ii. Group Member Details (Name & Matric No).
 
     a - MUHAMMAD KHAIRUNAS BIN NOORIZAM (2112383)
     b - WAN MOHD NAZIM BIN WAN MUHAMAD SAIDIN (2114261)
+    <https://github.com/nazim98/case_study_1.git>
     c - EZHAD EMINUDDIN BIN KARIM (2218327)
+    <>
 
 iii. The assigned tasks for each group member.
 
